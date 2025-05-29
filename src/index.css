@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: pricedown;
+  src: url('./fonts/Pricedown Bl.otf');
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "pricedown";
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;  
+}
