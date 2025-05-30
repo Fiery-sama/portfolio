@@ -142,8 +142,8 @@ function App() {
                 <img className='absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover' src="./sky.png" alt="skies" />
                 <img className='absolute bg scale-[1.8] rotate-[-10deg] top-0 left-0 w-full h-full object-cover' src="./bg.png" alt="background-image" />
                 <div className='text text-white flex flex-col gap-3 absolute top-40 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[10deg]'>
-                  <h1 className='md:text-[10rem] md:-ml-20 text-8xl -ml-20'>Suhail</h1>
-                  <h1 className='md:text-[10rem] md:ml-96 text-8xl ml-30'>Khan</h1>
+                  <h1 className='md:text-[10rem] md:-ml-20 text-8xl -ml-1'>Suhail</h1>
+                  <h1 className='md:text-[10rem] md:ml-96 text-8xl ml-60'>Khan</h1>
                 </div>
                 <img className='absolute me -bottom-[150%] left-1/2 -translate-x-1/2 h-[40rem] scale-[7] rotate-[-20deg]' src="./me-2.png" alt="my-image" />
               </div>
