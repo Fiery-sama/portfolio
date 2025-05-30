@@ -31,6 +31,8 @@ function App() {
     })
   })
 
+
+  
   useGSAP(() => {
     if (!showContent) return
 
@@ -84,8 +86,10 @@ function App() {
     main?.addEventListener("mousemove", function (e) {
       // console.log(e.clientX, e.clientY)
       const xMove = (e.clientX / window.innerWidth - 0.5) * 40
+      const yMove = (e.clientY / window.innerHeight - 0.5) * 40
       gsap.to(".main .text", {
-        x: `${xMove * 0.5}%`
+        x: `${xMove * 0.5}%`,
+        y: `${yMove * 0.5}%`,
       })
       gsap.to(".sky", {
         x: xMove,
@@ -96,6 +100,9 @@ function App() {
       // gsap.to(".me", {
       //   x: `${xMove * 0.3}`,
       // })
+      gsap.to(".about-text", {
+        
+      })
 
     })
   }, [showContent])
@@ -162,10 +169,13 @@ function App() {
                 {/* Right Section (Content) */}
                 <div className="w-full md:w-[60%] flex flex-col justify-center items-center text-center md:text-left about-content">
                   <h1 className="md:text-7xl text-5xl text-red-600 p-4">About Me</h1>
+                  <div className='about-text'>
                   <p className="md:text-xl text-md mt-4 font-montserrat p-4">
                     Hi, I&apos;m Suhail Khan, a full-stack developer with a passion for crafting smart, scalable web solutions. With a toolkit that spans Python, JavaScript, Django, React, and beyond, I thrive at the intersection of logic and creativity. Whether I&apos;m optimizing a MySQL schema, architecting APIs, or collaborating on sleek UI, I bring sharp problem-solving skills and a growth mindset to every sprint.          </p>
                   <p className="md:text-xl text-md mt-3 font-montserrat p-4">
-                    Outside code, you&apos;ll find me sketching, gaming, or diving into the next tech trend. I don&apos;t just build apps, I build experiences that work beautifully and scale effortlessly. Let&apos;s make the web smarter, one project at a time.          </p>
+                    Outside code, you&apos;ll find me sketching, gaming, or diving into the next tech trend. I don&apos;t just build apps, I build experiences that work beautifully and scale effortlessly. Let&apos;s make the web smarter, one project at a time.          
+                    </p>
+                  </div>
                   <div className="p-4 mt-5">
                     <a
                       href="./docs/suhail_khan_resume.pdf"
