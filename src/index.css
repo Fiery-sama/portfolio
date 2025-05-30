@@ -2,14 +2,22 @@
 @import "tailwindcss";
 
 @font-face {
+font-family: 'PricedownBl-Regular';
+font-style: normal;
+font-weight: normal;
+src: local('PricedownBl-Regular'), url('./fonts/pricedown bl.woff') format('woff');
+}
+
+/* @font-face {
   font-family: pricedown;
   src: url('./fonts/Pricedown bl.ttf');
 }
+ */
 
 html, body {
   width: 100%;
   height: 100%;
-  font-family: "pricedown";
+  font-family: "PricedownBl-Regular";
 }
 
 .font-montserrat {
