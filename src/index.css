@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/pricedown');
 @import "tailwindcss";
 
 /* @font-face {
@@ -8,15 +9,16 @@ font-weight: normal;
 src: local('PricedownBl-Regular'), url('./fonts/pricedown bl.woff') format('woff');
 }
  */
-@font-face {
+/* @font-face {
   font-family: pricedown;
   src: url('./fonts/pricedown.black.otf');
 }
+ */
 
 html, body {
   width: 100%;
   height: 100%;
-  font-family: "PricedownBl-Regular";
+  font-family: 'Pricedown Bl', sans-serif;
 }
 
 .font-montserrat {
