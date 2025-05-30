@@ -53,7 +53,7 @@ function App() {
     })
 
     gsap.to('.bg', {
-      scale: 1.1,
+      scale: 1.2,
       rotate: 0,
       duration: 2,
       ease: 'Ease.inOut',
